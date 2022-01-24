@@ -11,8 +11,8 @@
 	<groupId>com.virtusa</groupId>
 	<artifactId>traderapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>traderapi</name>
-	<description>Demo project for Spring Boot</description>
+	<name>customer</name>
+	<description></description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
