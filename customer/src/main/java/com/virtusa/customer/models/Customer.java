@@ -26,7 +26,7 @@ public class Customer {
 	@Column(name = "Balance")
 	private long balance;
 	
-	@Column(name = "Name")
+	@Column(name = "Name",length = 50,nullable = false)
 	private String name;
 	
 	@Column(name = "Email")

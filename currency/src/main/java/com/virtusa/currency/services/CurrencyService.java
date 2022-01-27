@@ -38,7 +38,11 @@ public class CurrencyService {
 		return status;
 	}
 	
-	public Currency updateCurrency(Currency currency) {
+	public Currency updateCurrency(long currencyId) {
+		Currency currency = this.getCurrencyById(currencyId);
+		if(currency != null) {
+			currency.setCurrencyCode(currencyId);
+		}
 		return this.currencyRepo.save(currency);
 	}
 	

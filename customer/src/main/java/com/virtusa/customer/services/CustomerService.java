@@ -34,8 +34,13 @@ public class CustomerService {
 		return status;
 	}
 	
-	public Customer updateCustomer(Customer customer) {
+	public Customer updateCustomer(long customerId) {
+		Customer customer = this.getCustomerById(customerId);
+		if(customer != null) {
+			customer.setCustomerId(customerId);
+		}
 		return this.customerRepo.save(customer);
+
 	}
 
 }

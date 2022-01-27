@@ -15,14 +15,17 @@ import lombok.Data;
 public class Currency {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="Customer_Id")
-	private long customerId;
+	@Column(name="Currency_Code")
+	private long currencyCode;
 	
-	@Column(name = "Name")
-	private String name;
+	@Column(name = "Country")
+	private String country;
 	
-	@Column(name = "Balance")
-	private long balance;
+	@Column(name = "Tradeable_Flag")
+	private boolean tradeableFlag;
+	
+	@Column(name = "Description")
+	private String description;
 
 	@Lob
 	@Column(name = "Image")
